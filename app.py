@@ -6,7 +6,8 @@ from flask import Flask
 app = Flask(__name__)
 
 import requests
-from bs4 import BeautifulSoup
+import bs4 as bs
+# from bs4 import BeautifulSoup
 
 # FUNCTION 
 # Will check if "check_url" is one of the 'a' links in the list 'links'
@@ -43,7 +44,7 @@ def check_links():
         print("URL: ", url, "Status Code: ", response.status_code)
 
         # Use Beautiful Soup to parse the HTML content of the response
-        soup = BeautifulSoup(response.content, 'html.parser')
+        soup = bs.BeautifulSoup(response.content, 'html.parser')
 
         # To Print the title of webpage ::  print(soup.title.string)
 
