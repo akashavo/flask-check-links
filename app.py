@@ -27,7 +27,7 @@ def is_link_in_url (links, check_url) : #{
 #}
 
 @app.route('/check_links')
-def check_links():
+def check_links(): #{
     # Define the URLs to scrape
     # This is a list of URL+Backlinks pairs to be checked, called url_backlink_pairs - JUST KEEP ADDING PAIRS TO THE LIST:
     url_backlink_pairs = [("https://www.womendailymagazine.com/losing-weight-peptides/", "https://corepeptides.com/peptides/cjc-1295-ipamorelin-10mg-blend/"), 
@@ -61,6 +61,7 @@ def check_links():
 
     #}
 
+#}
 
 # TO DOs:
 # DONE - get Server_return_code
