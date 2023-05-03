@@ -3,7 +3,7 @@
 # Author/updates: AS
 
 from flask import Flask
-app = Flask(__name__)
+app = Flask(__check_links__)
 
 import requests
 import bs4 as bs
