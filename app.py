@@ -26,6 +26,7 @@ def is_link_in_url (links, check_url) : #{
   
 #}
 
+@app.route('/')
 @app.route('/check_links')
 def check_links(): #{
     # Define the URLs to scrape
